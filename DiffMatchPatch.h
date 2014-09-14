@@ -36,11 +36,19 @@
  * which means: delete "Hello", add "Goodbye" and keep " world."
  */
 
+/*
 typedef enum {
   DIFF_DELETE = 1,
   DIFF_INSERT = 2,
   DIFF_EQUAL = 3
 } Operation;
+ */
+
+typedef NS_ENUM(NSInteger, Operation) {
+    DIFF_DELETE,
+    DIFF_INSERT,
+    DIFF_EQUAL
+};
 
 
 /*
