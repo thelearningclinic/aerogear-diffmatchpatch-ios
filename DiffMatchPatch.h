@@ -45,9 +45,9 @@ typedef enum {
  */
 
 typedef NS_ENUM(NSInteger, Operation) {
-    OperationDIFF_DELETE,
-    OperationDIFF_INSERT,
-    OperationDIFF_EQUAL
+    OperationDiffDelete,
+    OperationDiffInsert,
+    OperationDiffEqual
 };
 
 
