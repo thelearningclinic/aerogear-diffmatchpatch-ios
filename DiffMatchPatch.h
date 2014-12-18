@@ -19,6 +19,8 @@
  * Author: fraser@google.com (Neil Fraser)
  * ObjC port: jan@geheimwerk.de (Jan Weiß)
  */
+#ifndef DIFFMATCHPATCH_H
+#define DIFFMATCHPATCH_H
 
 #import <Foundation/Foundation.h>
 
@@ -181,3 +183,5 @@ typedef NS_ENUM(NSInteger, Operation) {
 - (void)patch_addContextToPatch:(Patch *)patch sourceText:(NSString *)text;
 
 @end
+
+#endif
