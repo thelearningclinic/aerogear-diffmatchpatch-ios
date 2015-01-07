@@ -24,9 +24,24 @@ You can also run test from the command:
     xcodebuild -scheme DiffMatchPatch -destination 'platform=iOS Simulator,name=iPhone 5s' test
 
 
+## Cocoapods
+This project can be made into a [Cocoapod](http://www.cocoapods.org/):
 
+First install the Cocoapods gem by running:
 
+    sudo gem install cocoapods --pre
 
+Then you can verify that the podspec is correct:
 
-    
+    pod spec lint DiffMatchPatch.podspec --verbose --allow-warnings
+
+If all goes well you are ready to release. First, create a tag and push:
+
+    git tag 'version'
+    git push --tags
+
+Once the tag is available you can send the library to the Specs repo. For this you'll have to follow the instructions in ["Getting Setup with Trunk"].
+
+    pod trunk push DiffMatchPatch.podspec
+
 
