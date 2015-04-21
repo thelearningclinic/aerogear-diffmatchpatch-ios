@@ -6,7 +6,8 @@ Pod::Spec.new do |s|
   s.license      = {:type => 'Apache License, Version 2.0', :file => 'COPYING'}
   s.author       = {'Neil Fraser' => 'fraser@google.com', 'Jan Weiss' => 'jan@geheimwerk.de'}
   s.source       = { :git => 'https://github.com/aerogear/aerogear-diffmatchpatch-ios.git',  :tag => '0.1.2'}
-  s.platform     = :ios, '8.0'
   s.source_files = '*.{h,m,c}'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
   s.requires_arc = false
 end
